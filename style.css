@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(hsl(273, 75%, 66%),hsl(240, 73%, 65%));
+}
+.abs0{
+    height: 450px;
+    width: 800px;
+    position: relative;
+
+}
+
+.img{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    
+}
+.img .img2{
+    width: 100%;
+}
+.img2{
+    position: absolute;
+    left: -20%;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+.img3{
+    position: absolute;
+
+    width: 160%;
+    top: 50%;
+    right:100% ;
+    transform: translate(50%,-50%);
+}
+
+.abs{
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    transform: translate(50%,-20%);
+    z-index: 9;
+
+
+
+}
+
+
+.container{
+    position: relative;
+    height: 100%;
+    width: 100%;
+
+   background-color: white;
+   overflow: hidden;
+
+   align-items: center;
+   display: flex;
+   border-radius: 20px;
+}
+.right{
+    width: 50%;
+    height: 100%;
+    padding: 0 30px 0 0;
+    display: flex;
+    margin: 40px 0;
+    overflow: auto;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    flex-direction: column;
+    scrollbar-width: none;
+    -ms-overflow-style: none; 
+
+}
+.right::-webkit-scrollbar {
+    display: none;
+}
+.hover img{
+    rotate: 360deg;
+    transition: all ease-in-out .2s;
+
+}
+
+h2{
+    text-align: center;
+}
+.text,.pdiv,.hover,.down{
+    width: 100%;
+}
+.hover{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+    padding: 20px 0;
+    cursor: pointer;
+}
+.hover p:hover{
+    color: orange;
+}
+.down{
+    padding: 20px 20px 20px 0;
+    border-bottom: 1px solid black;
+    transition: all ease-in-out 1s;
+}
+.blas{
+    transition: all  ease-in-out .2s;
+    display: none;
+}

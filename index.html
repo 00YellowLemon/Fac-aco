@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | FAQ Accordion Card</title>
+
+</head>
+<body>
+  <div class="abs0">
+    <div class="container">
+      <div class="img">
+        <img src="/images/illustration-woman-online-desktop.svg" alt="" class="img2">
+        <img src="./images/bg-pattern-desktop.svg" alt="" class="img3">
+      </div>
+      <div class="right">
+        <h2>
+          FAQ
+        </h2>
+        <div class="text">
+          <div class="pdiv">
+            <div class="hover">
+              <p>
+                How many team members can I invite?
+              </p>
+              <img src="/images/icon-arrow-down.svg" alt="">
+            </div>
+            <div class="down blas">
+              <p>
+                You can invite up to 2 additional users on the Free plan. There is no limit on 
+                team members for the Premium plan.
+              
+
+              </p>
+            </div>
+          </div>
+          <div class="pdiv">
+            <div class="hover">
+              <p>
+                	
+                What is the maximum file upload size?
+
+
+              </p>
+              <img src="/images/icon-arrow-down.svg" alt="">
+            </div>
+            <div class="down blas">
+              <p>
+                No more than 2GB. All files in your account must fit your allotted storage space.
+                
+              </p>
+            </div>
+          </div>
+          <div class="pdiv">
+            <div class="hover">
+              <p>
+                	
+                How do I reset my password?
+
+
+              </p>
+              <img src="/images/icon-arrow-down.svg" alt="">
+            </div>
+            <div class="down blas">
+              <p>
+                Click “Forgot password” from the login page or “Change password” from your profile page.A reset link will be emailed to you.
+                
+              </p>
+            </div>
+          </div>
+          <div class="pdiv">
+            <div class="hover">
+              <p>
+                Can I cancel my subscription?
+              </p>
+              <img src="/images/icon-arrow-down.svg" alt="" class="blasd">
+            </div>
+            <div class="down blas">
+              <p>
+                Yes! Send us a message and we’ll process your request no questions asked.
+              </p>
+            </div>
+          </div>
+          <div class="pdiv">
+            <div class="hover">
+              <p>
+                Do you provide additional support?
+              </p>
+              <img src="/images/icon-arrow-down.svg" alt="" class="blasd">
+            </div>
+            <div class="down blas">
+              <p>
+                Chat and email support is available 24/7. Phone lines are open during normal business hours.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="abs">
+      <img src="/images/illustration-box-desktop.svg " alt="" >
+    </div>
+    
+
+  </div>
+  <script>
+let elements = document.querySelectorAll(".hover");
+elements.forEach((elem) => {
+  elem.addEventListener("click", () => myhider(elem));
+});
+
+let i = true;
+
+function myhider(elem) {
+  let parent = elem.parentElement;
+  let child = parent.querySelector(".down");
+  child.classList.toggle("blas");
+
+  let flos = parent.querySelector("img");
+  let suv = parent.querySelector("p");
+  
+  if (i) {
+    flos.style.rotate = "180deg";
+    suv.style.fontWeight = "700";
+    suv.style.color = "black";
+    i = false;
+  } else {
+    flos.style.rotate = "0deg";
+    suv.style.fontWeight = "500";
+    suv.style.color = "grey";
+    i = true;
+  }
+}
+
+
+  </script>
+
+</body>
+</html>
